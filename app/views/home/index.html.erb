@@ -1,0 +1,18 @@
+<section>
+    <% if user_signed_in?%>
+    <div>
+    <h1>hello <%= @user.email %> </h1>
+    <%= button_to "log_out", destroy_user_session_path , method: :delete %>
+    </div>
+<%else%>
+    <div class = "container d-flex align-items-center flex-column justify-content-center mb-4">
+    <%= image_tag 'background.png', class:"mb-4" %>
+        <div class="d-flex align-items-center flex-column justify-content-center">
+            <%= link_to "Login", new_user_session_path, class: "btn btn-primary mb-4 w-100" %>
+             <%= link_to "sign_up", new_user_registration_path, class: "btn btn-success mb-4 w-100"%>
+        </div>
+     </div>
+<%end%>
+
+</section>
+        
