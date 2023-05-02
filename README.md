@@ -1,36 +1,8 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+ <h3><b>Microverse README Template</b></h3>
 
 </div>
 
@@ -42,6 +14,8 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🖺 Entity Relationship Diagram](#er-diagram)
+  - [📽️ Project Documentation](#pro-doc)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -49,41 +23,41 @@ After you're finished please remove all the comments and instructions!
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 MoneyMate <a name="about-project"></a>
+![App-png](./app/assets/images/background.png)
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**MoneyMate** is a mobile web application that allows the user to:  
+ - register and log in, so that the data is private to them.
+ - Ceate categories for thier expenses.
+ - record transactions associated with a category.
+ - see the money spent on each category.
+ - see the total money spent on all categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
+  <summary>Ruby</summary>
 </details>
 
 <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
+  <summary>Ruby on Rails</summary>
+</details>
+
+<details>
+  <summary> Javascript </summary>
 </details>
 
 <details>
@@ -97,21 +71,23 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Authentication - User must be authenticated**
+- **Users can track expenses category-wise**
+- **Users can see the total money spent on all categories**
+- **Users expense data is private to them**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Documentation -->
+## 📽️ Project Doocumentation <a name="pro-doc"></a>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+- [MoneyMate](https://budget-ypr8.onrender.com/home) 
 
-- [Live Demo Link](https://google.com)
+- [video]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,103 +95,64 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
+`Git` and `Ruby`
+```
  gem install rails
 ```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  bundle install
 ```
---->
+```sh
+  npm install
+```
 
+Create Database (Mandatory)
+
+```
+rails db:create
+```
+
+If you have made a migration then run this command
+
+```
+rails db:migrate
+```
+```
+rails db:seed
+```
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+  rails server or rails s  # after build
+``` 
+
+Run tests
 ```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
+rspec
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Maaloum.**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Maaloum](https://github.com/maaloum)
+- Twitter: [@Maaloum](https://twitter.com/maaloum)
+- LinkedIn: [@Maaloum](https://linkedin.com/in/maaloum)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +160,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Notifications that pop up and close]**
+- [ ] **[Implement most recent and anicient]**
+- [ ] **[Implement picture upload]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +180,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,25 +188,34 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank:
+- [Microverse](https://microverse.org)
+- Code reviewers
+- Inspiration
+   - [Vitor Guedes Madeira](https://github.com/VitorGuedesMadeira) 
 
-I would like to thank...
+Under the the [Creative Commons liscense](https://creativecommons.org/licenses/by-nc/4.0/)
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/84629565/181086933-d5bcdb09-da51-40f6-b0f8-a1f191614257.png">
+
+Original design from [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
+- ** On what platform this app works ?**
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+  - Since it is a web mobile application, you can use it from your mobile-phone and personal computers too. In other words, you can use it from any devise or platfrom as long as it supports web-browser.
 
-- **[Question_1]**
+- **How to run this app after I cloned it to my local machine ?**
 
-  - [Answer_1]
+  - Start the sever by executing the command `rails server` from your terminal. And open up your browser and visit localhost:3000 
 
-- **[Question_2]**
+- **What prerequisites are required to run the app ?**
 
-  - [Answer_2]
+  - Since it is a RoR app make sure you have rails, ruby and postgresql are installed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,8 +223,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
