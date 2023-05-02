@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     if current_user
       redirect_to categories_url, alert: "You are already logged in as, #{current_user.name}"
     else
-      render :splash
+      render :index
     end
   end
 

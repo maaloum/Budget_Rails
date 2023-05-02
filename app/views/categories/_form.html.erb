@@ -11,20 +11,20 @@
       </div>
     <% end %>
   
-    <div class="field">
+    <div class="field form-outline mb-2">
       <%= form.label :name %>
-      <%= form.text_field :name, class: "" %>
+      <%= form.text_field :name, class: "orm-control" %>
     </div>
   
     <div class="field">
       <%= form.label :icon %>
-      <%= form.text_field :icon, class: "" %>
+      <%= form.text_field :icon, class: "orm-control" %>
     </div>
   
     <div class="inline">
     </div>
   
-    <div class="">
+    <div class=" form-outline ">
       <%= form.submit "#{action_name == 'edit' ? 'Update' : 'Save'}", class: "" %>
     </div>
   <% end %>
