@@ -216,7 +216,7 @@ button.btn-link {
   box-shadow: 0 0 10px #719ece;
 }
 
-.card img{
+.card img {
   width: 80px;
   height: 80px;
 }
@@ -250,7 +250,7 @@ button.btn-link {
   padding-right: 12px;
 }
 
-.contenu{
+.contenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -259,6 +259,7 @@ button.btn-link {
   font-size: x-large;
   line-height: 2rem;
 }
+
 p.text-xs {
   color: var(--third);
   line-height: 2rem;
