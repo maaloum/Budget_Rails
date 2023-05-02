@@ -211,14 +211,14 @@ button.btn-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* gap: 10px; */
-  height: 80px;
-
-  /* width: 100%; */
   background: white;
   border-radius: 4px;
   box-shadow: 0 0 10px #719ece;
+}
+
+.card img{
+  width: 80px;
+  height: 80px;
 }
 
 .transaction {
@@ -243,27 +243,29 @@ button.btn-link {
 
 .text-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 25px;
   gap: 5px;
   width: 100%;
   padding-right: 12px;
 }
 
-.flex-row {
+.contenu{
   display: flex;
   justify-content: space-between;
-  font-size: x-large;
-  padding-top: 10px;
   align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: x-large;
   line-height: 2rem;
 }
-
 p.text-xs {
   color: var(--third);
   line-height: 2rem;
   background-color: #d9dcdf1a;
   width: 105%;
   font-size: 0.6em;
+  margin-left: 40px;
 }
 
 .authentication {

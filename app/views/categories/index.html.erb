@@ -12,12 +12,9 @@
        
           <%= link_to  category_expenses_path(category), class: "card-link" do %>
             <div class="card"> 
-              <div class="icon-container">
-                <%= image_tag(category.icon, class: "icon") %>
-              </div>
-          
               <div class="text-container">
-                <div class="flex-row px-3">
+                <%= image_tag(category.icon, class: "icon") %>
+                <div class="contenu">
                   <h4 class="text-lg">
                     <%= category.name %>
                   </h4>
@@ -25,9 +22,9 @@
                     <%= "$#{category.total_amount}" %>
                   </div>
                 </div>
-                <p class="text-xs px-2"><%= category.created_at.strftime("%d %b %Y") %></p>
+                
               </div>
-              
+              <p class="text-xs px-2"><%= category.created_at.strftime("%d %b %Y") %></p>
             </div>
           <% end %>
           <% end %>
