@@ -1,23 +1,23 @@
-<% content_for :title, 'My-Exp | Categories' %>
+<% content_for :title, 'MoneyMate | Categories' %>
   <%= javascript_import_module_tag "menu" %>
 
 <div class="grand-total">
         <p class="amount-label">Total Amount</p>
         <p class="amount"><%= "$#{@total}" %></p>
 </div>
-    <div class="container card-wrap">
+    <div class="container-fuild mx-2">
     <% if @categories.present? %>
     
     <% @categories.each do |category| %>   
        
           <%= link_to  category_expenses_path(category), class: "card-link" do %>
             <div class="card"> 
-              <div class="card-img-wrapper">
-                <img src="<%= category.icon %>", alt="catagory image" class="card-img" />
+              <div class="icon-container">
+                <%= image_tag(category.icon, class: "icon") %>
               </div>
           
               <div class="text-container">
-                <div class="flex-row">
+                <div class="flex-row px-3">
                   <h4 class="text-lg">
                     <%= category.name %>
                   </h4>
@@ -25,7 +25,7 @@
                     <%= "$#{category.total_amount}" %>
                   </div>
                 </div>
-                <p class="text-xs"><%= category.created_at.strftime("%d %b %Y") %></p>
+                <p class="text-xs px-2"><%= category.created_at.strftime("%d %b %Y") %></p>
               </div>
               
             </div>

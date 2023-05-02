@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
       @total = Expense.where(user: current_user).sum(&:amount)
     else
       @page_title = 'Welcome'
-      render :splash
+      redirect_to home_path
     end
   end
 
